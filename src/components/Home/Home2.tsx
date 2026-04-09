@@ -11,17 +11,14 @@ import popup_discord_png from "../../Assets/discord-popup.png";
 import Button from "react-bootstrap/Button";
 
 function Home2() {
-  /* State show discord popup */
   const [showDiscordPopup, setShowDiscordPopup] = React.useState(false);
   useEffect(() => {
     const contentElements = document.querySelectorAll(".content");
 
-    // Add or remove the 'blur' class to each content element based on the 'showDiscordPopup' state
     contentElements.forEach((element) => {
       element.classList.toggle("blur", showDiscordPopup);
     });
 
-    // Cleanup function to remove the 'blur' class from all content elements when the component unmounts
     return () => {
       contentElements.forEach((element) => {
         element.classList.remove("blur");
@@ -56,22 +53,18 @@ function Home2() {
                 <img
                   src={myImg}
                   className="img-fluid"
-                  alt="Avatar of Jakob Rössner"
-                  width="600"
-                  height="600"
+                  alt="Portrait of Jakob Rössner"
+                  width={600}
+                  height={600}
                 />
               </Tilt>
               <br />
               <br />
-              <h1 className="negative-letter-spacing">FIND ME ON</h1>
-              <p>
-                Feel free to <span className="purple">connect </span>with me
+              <h2 className="negative-letter-spacing section-kicker">Connect</h2>
+              <p className="connect-sub">
+                Open to senior frontend roles, product teams, and UI-heavy
+                collaborations — especially where craft and metrics both matter.
               </p>
-              <h2>
-                <span className="point" role="img" aria-labelledby="wave">
-                  👇
-                </span>
-              </h2>
               <ul className="home-about-social-links">
                 <li className="social-icons">
                   <a
@@ -98,10 +91,18 @@ function Home2() {
                 <li className="social-icons">
                   <div
                     className="icon-colour home-social-icons"
+                    role="button"
+                    tabIndex={0}
                     aria-label="Discord"
                     onClick={(event) => {
                       event.preventDefault();
                       setShowDiscordPopup(true);
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        setShowDiscordPopup(true);
+                      }
                     }}
                   >
                     <FaDiscord />
@@ -111,7 +112,7 @@ function Home2() {
                   <a
                     href={linkData.mail}
                     className="icon-colour home-social-icons"
-                    aria-label="Mail me"
+                    aria-label="Email"
                   >
                     <FaMailBulk />
                   </a>

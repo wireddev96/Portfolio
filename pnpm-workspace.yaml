@@ -1,0 +1,7 @@
+allowBuilds:
+  '@parcel/watcher': false
+  canvas: false
+  core-js: false
+  core-js-pure: false
+  react-tsparticles: false
+  tsparticles: false

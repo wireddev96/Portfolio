@@ -6,7 +6,7 @@ import { githubData } from "../data";
 const Logos = () => {
   const [currentLogo, setCurrentLogo] = useState(0);
   const [stars, setStars] = useState("");
-  const interval = useRef();
+  const interval = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
     interval.current = setInterval(() => renderAnotherClass(), 3000);
@@ -17,7 +17,7 @@ const Logos = () => {
     });
 
     return () => {
-      clearInterval(interval.current);
+      if (interval.current != null) clearInterval(interval.current);
     };
   }, []);
 

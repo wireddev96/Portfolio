@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { ImPointRight } from "react-icons/im";
-import { Picture } from "react-optimized-images";
+import ResponsiveImage from "../ResponsiveImage";
 
 function AboutSummary() {
   return (
@@ -21,20 +21,16 @@ function AboutSummary() {
       <Container>
         <Row>
           <Col md={7} className="home-projects-summary-description">
-            <h1
-              style={{ fontSize: "2.6em" }}
-              className="negative-letter-spacing"
-            >
-              MY <span className="purple"> PROJECTS </span>
-            </h1>
+            <h2 className="negative-letter-spacing summary-section-title">
+              Selected <span className="purple">projects</span>
+            </h2>
             <p className="home-about-summary-body">
-              Here you can find some of my{" "}
-              <span className="purple"> recent projects </span> included my
-              first contact with programming. I'm always looking for{" "}
-              <span className="purple"> new challenges </span> and new projects
-              to work on. <br />
+              Interfaces, apps, and experiments — spanning{" "}
+              <span className="purple">production UIs</span>, tooling, and{" "}
+              <span className="purple">earlier game-adjacent</span> work that got
+              me into programming. <br />
               <br />
-              Some of them are: <br /> <br />
+              Highlights include: <br /> <br />
               <ul>
                 <li className="basic-list">
                   <ImPointRight /> A tablet for elderly people
@@ -62,7 +58,7 @@ function AboutSummary() {
           </Col>
           <Col md={5} className="previewProjects">
             <Tilt>
-              <Picture
+              <ResponsiveImage
                 src={previewProjects}
                 className="img-fluid"
                 alt="previewProjects"

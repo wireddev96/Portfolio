@@ -2,60 +2,66 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 // @ts-ignore
 import homeLogo from "../../Assets/home-main.svg";
+import { Link } from "react-router-dom";
 import Home2 from "./Home2";
 import AboutSummary from "./AboutSummary";
 import ProjectsSummary from "./ProjectsSummary";
 import Type from "./Type";
+import linkData from "../data";
 
-// The Home section of the website
 function Home() {
   return (
     <section>
       <Container fluid className="home-section content" id="home">
         <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
+          <Row className="align-items-center">
+            <Col lg={7} className="home-header">
+              <p className="home-eyebrow">
+                senior_frontend_engineer — interfaces · systems · performance
+              </p>
               <div className="negative-letter-spacing">
-                <h1 style={{ paddingBottom: 15 }} className="heading">
-                  Hi there!{" "}
-                  <span className="wave" role="img" aria-labelledby="wave">
-                    👋
-                  </span>
-                </h1>
+                <h1 className="heading">Hi, I&apos;m</h1>
                 <h1 className="heading-name">
-                  I'M
-                  <strong className="main-name">
-                    {" "}
-                    <span className="main-name-letter1">J</span>
-                    <span className="main-name-letter2">A</span>
-                    <span className="main-name-letter3">K</span>
-                    <span className="main-name-letter4">O</span>
-                    <span className="main-name-letter5">B</span>
-                    <span className="main-name-letter6"> </span>
-                    <span className="main-name-letter7">R</span>
-                    <span className="main-name-letter8">Ö</span>
-                    <span className="main-name-letter9">S</span>
-                    <span className="main-name-letter10">S</span>
-                    <span className="main-name-letter11">N</span>
-                    <span className="main-name-letter12">E</span>
-                    <span className="main-name-letter13">R</span>
-                  </strong>
-                  &nbsp;😉
+                  <span className="main-name">Jakob Rössner</span>
                 </h1>
               </div>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <span style={{ fontSize: 20 }}>Software Engineer for</span>
+              <p className="hero-lead">
+                I lead and ship product UI on the web: component architecture,
+                design systems, performance budgets, and accessible experiences
+                users can trust — from first paint to edge cases.
+              </p>
+              <ul className="hero-stack" aria-label="Core technologies">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>CSS / SCSS</li>
+                <li>Web platform</li>
+              </ul>
+              <div className="hero-type-row">
+                <span className="hero-type-label">Focus areas</span>
                 <Type />
+              </div>
+              <div className="hero-cta">
+                <Link to="/projects" className="btn-hero btn-hero-primary">
+                  Case studies &amp; work
+                </Link>
+                <a
+                  href={`${linkData.github}Portfolio`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-hero btn-hero-ghost"
+                >
+                  This site on GitHub
+                </a>
               </div>
             </Col>
 
-            <Col md={5} className="home-logo" style={{ paddingBottom: 20 }}>
+            <Col lg={5} className="home-logo">
               <img
                 src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                alt=""
+                className="img-fluid hero-illustration"
+                width={480}
+                height={400}
               />
             </Col>
           </Row>

@@ -11,7 +11,7 @@ import {
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
-import { Picture } from "react-optimized-images";
+import ResponsiveImage from "../ResponsiveImage";
 import Logos from "./Logos";
 import linkData from "../data";
 
@@ -38,7 +38,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <Picture src={logo} className="logo" alt="brand" />
+          <ResponsiveImage src={logo} className="logo" alt="brand" loading="eager" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

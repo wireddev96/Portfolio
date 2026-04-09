@@ -6,7 +6,7 @@ import Tilt from "react-parallax-tilt";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import { AiOutlineUser } from "react-icons/ai";
-import { Picture } from "react-optimized-images";
+import ResponsiveImage from "../ResponsiveImage";
 
 function aboutSummary() {
   return (
@@ -21,16 +21,13 @@ function aboutSummary() {
       <Container>
         <Row>
           <Col md={7} className="home-about-summary-description">
-            <h1
-              style={{ fontSize: "2.6em" }}
-              className="negative-letter-spacing"
-            >
-              MORE <span className="purple"> ABOUT </span> ME
-            </h1>
+            <h2 className="negative-letter-spacing summary-section-title">
+              About <span className="purple">the craft</span>
+            </h2>
             <p className="home-about-summary-body">
-              In this section I will give you a brief summary of{" "}
-              <span className="purple"> my skills</span> and the{" "}
-              <span className="purple"> tools</span> I'm familiar with.
+              How I work across the frontend stack — from{" "}
+              <span className="purple">UI architecture</span> and tooling to the
+              habits that keep <span className="purple">shipping</span> sustainable.
             </p>
             <Nav.Link as={Link} to="/about" className="link">
               <AiOutlineUser
@@ -41,7 +38,7 @@ function aboutSummary() {
           </Col>
           <Col md={5} className="previewAbout">
             <Tilt>
-              <Picture
+              <ResponsiveImage
                 src={previewAbout}
                 className="img-fluid"
                 alt="previewAbout"

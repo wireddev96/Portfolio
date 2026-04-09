@@ -5,10 +5,16 @@ function Type() {
   return (
     <Typewriter
       options={{
-        strings: ["Web Development", "Mobile Development"],
+        strings: [
+          "Component-driven UIs",
+          "Core Web Vitals & perf",
+          "Accessible, semantic HTML",
+          "Design systems & tokens",
+        ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 35,
+        delay: 48,
       }}
     />
   );

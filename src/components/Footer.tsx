@@ -5,22 +5,19 @@ import { FaLinkedinIn, FaMailBulk } from "react-icons/fa";
 import linkData from "./data";
 
 function Footer() {
-  const date = new Date();
-  const year = date.getFullYear();
+  const year = new Date().getFullYear();
   return (
     <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copyright">
+      <Row className="align-items-center gy-3">
+        <Col md={5} className="footer-copyright text-md-start">
           <h3>
-            Designed and Developed with{" "}
-            <div className="text-red-500 px-2 text-2xl">&#10084;</div> by Jakob
-            Rössner
+            © {year} Jakob Rössner · Senior frontend engineer
           </h3>
         </Col>
-        <Col md="4" className="footer-copyright">
-          <h3>Copyright © {year} JR</h3>
+        <Col md={3} className="footer-copyright text-md-center">
+          <h3>React · TypeScript · product UI</h3>
         </Col>
-        <Col md="4" className="footer-body">
+        <Col md={4} className="footer-body text-md-end">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
@@ -48,18 +45,12 @@ function Footer() {
               <a
                 href={linkData.mail}
                 className="footer-icon"
-                aria-label="Mail Me"
+                aria-label="Email"
               >
                 <FaMailBulk />
               </a>
             </li>
           </ul>
-        </Col>
-      </Row>
-      <Row>
-        <Col md="4" className="footer-body"></Col>
-        <Col md="4" className="footer-body">
-          <h3>Thank you for visiting my website!</h3>
         </Col>
       </Row>
     </Container>

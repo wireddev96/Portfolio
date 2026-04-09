@@ -9,6 +9,7 @@ import React, { lazy, Suspense, useEffect, useState } from "react";
 import About from "./components/About/About";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
+import { HiOutlineArrowUp } from "react-icons/hi";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Preloader from "./components/Pre";
@@ -46,12 +47,13 @@ function ScrollToTopButton() {
       {showButton && (
         <button
           type="button"
-          title="Scroll to top"
+          title="Back to top"
+          aria-label="Back to top"
           tabIndex={0}
           onClick={handleClick}
           className="scroll-to-top-button"
         >
-          Scroll To Top
+          <HiOutlineArrowUp aria-hidden />
         </button>
       )}
     </>
