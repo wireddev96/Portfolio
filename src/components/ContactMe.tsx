@@ -68,7 +68,7 @@ function ContactMe() {
               <AiFillHome /> <b>Address:</b> 9936 Thane Way Austin TX USA{" "}
               <br />
             </p>
-            <p>
+            <div>
               <h2>Get in touch with me on:</h2>
               <ul className="contact-links">
                 <li className="social-icons">
@@ -94,19 +94,17 @@ function ContactMe() {
                   </a>
                 </li>
                 <li className="social-icons">
-                  <div
-                    className="icon-colour home-social-icons"
+                  <button
+                    type="button"
+                    className="icon-colour home-social-icons home-social-icons-btn"
                     aria-label="Discord"
-                    onClick={(event) => {
-                      event.preventDefault();
-                      setShowDiscordPopup(true);
-                    }}
+                    onClick={() => setShowDiscordPopup(true)}
                   >
                     <FaDiscord />
-                  </div>
+                  </button>
                 </li>
               </ul>
-            </p>
+            </div>
           </Container>
         </Container>
       </section>

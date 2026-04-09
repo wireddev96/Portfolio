@@ -142,7 +142,7 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <h5>
+          <Col md={12}>
             <div className="projects-social">
               <h4 className="negative-letter-spacing">MY CURSEFORGE ACCOUNT</h4>
               <p>
@@ -150,29 +150,33 @@ function Projects() {
                 <span className="purple">Minecraft projects </span>...
               </p>
             </div>
-            <span className="point" role="img" aria-labelledby="wave">
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://www.curseforge.com/members/fleetadmiraljakob/projects"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="icon-colour home-social-icons"
+                  aria-label="CurseForge profile"
+                >
+                  <SiCurseforge />
+                </a>
+              </li>
+            </ul>
+            <span className="point" role="img" aria-label="Pointing down">
               👇
             </span>
-          </h5>
-          <li className="social-icons">
-            <a
-              href="https://www.curseforge.com/members/fleetadmiraljakob/projects"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-colour home-social-icons"
-            >
-              <SiCurseforge />
-            </a>
-          </li>
-          <p className="text-project-curseforge">
-            ... which are:
+          </Col>
+          <Col md={12} className="text-project-curseforge">
+            <p>... which are:</p>
             <br /> <br /> <br />
-            <Col
-              md={12}
-              data-aos="fade-up"
-              data-aos-offset="300"
-              data-aos-duration="3000"
-            >
+            <Row>
+              <Col
+                md={12}
+                data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-duration="3000"
+              >
               <ImPointRight />{" "}
               <a href="https://www.curseforge.com/minecraft/mc-mods/uncraftables-new">
                 {" "}
@@ -289,7 +293,8 @@ function Projects() {
               </div>{" "}
               <br /> <br />
             </Col>
-          </p>
+            </Row>
+          </Col>
         </Row>
       </Container>
     </Container>

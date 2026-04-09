@@ -32,3 +32,7 @@ Server/config.js
 
 /cypress
 cypress.config.ts
+
+# Buggy tooling can emit these; "NUL" is a Windows reserved name and breaks `git add`.
+/NUL
+/NUL.map

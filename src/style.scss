@@ -136,6 +136,7 @@ button:focus {
   background-color: rgba(8, 10, 14, 0.82) !important;
   transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
   box-shadow: 0 1px 0 var(--surface-border), 0 12px 40px rgba(0, 0, 0, 0.35) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(1.2) !important;
   backdrop-filter: blur(16px) saturate(1.2) !important;
 }
 
@@ -399,6 +400,7 @@ button:focus {
   padding-bottom: 4rem !important;
   padding-top: 2rem !important;
   z-index: 0;
+  -webkit-mask-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.85), black);
   mask-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.85), black);
 }
 
@@ -415,6 +417,7 @@ button:focus {
     ),
     linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
   background-size: 56px 56px;
+  -webkit-mask-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.75), black);
   mask-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.75), black);
 }
 
@@ -901,6 +904,13 @@ button:focus {
   border-radius: 50% !important;
   transition: 0.5s !important;
   cursor: pointer !important;
+}
+
+button.home-social-icons-btn {
+  border: none !important;
+  padding: 0 !important;
+  font: inherit !important;
+  color: inherit !important;
 }
 
 .home-social-icons-picture,
@@ -1765,10 +1775,10 @@ button:focus {
 
 .fork-btn {
   font-size: 1.1em !important;
+  padding-top: 10px !important;
   @media (min-width: 768px) {
     width: 7rem !important;
   }
-  padding-top: 10px !important;
 }
 
 .fork-btn-inner {
@@ -1776,10 +1786,10 @@ button:focus {
   background-color: #934cce5e !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
+  text-align: center !important;
   @media (max-width: 767px) {
     width: 7rem !important;
   }
-  text-align: center !important;
 }
 
 .fork-btn-inner:hover {
