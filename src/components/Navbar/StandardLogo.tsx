@@ -7,7 +7,7 @@ function StandardLogo() {
   return (
     <div>
       <CgGitFork /> <AiFillStar />{" "}
-      <SiGithub style={{ paddingLeft: 4, width: 20 }} />
+      <SiGithub className="navbar-github-icon" />
     </div>
   );
 }

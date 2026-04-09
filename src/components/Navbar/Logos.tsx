@@ -29,7 +29,7 @@ const Logos = () => {
 
   const logos = [
     <StandardLogo />,
-    <AiFillStar style={{ color: "yellow" }} className="star" />,
+    <AiFillStar className="star" />,
   ];
 
   const logoIndex = currentLogo % logos.length;

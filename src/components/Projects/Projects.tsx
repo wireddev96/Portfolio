@@ -91,17 +91,17 @@ function Projects() {
         <h1 className="project-heading negative-letter-spacing">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p className="text-on-primary">
           Here are a few projects I've worked on recently. <br />I am always on
           the lookout for challenging and exciting projects to work on.
         </p>
-        <p style={{ color: "rgb(155 126 172)" }}>
+        <p className="text-quote-muted">
           "Best way to learn is to build shit!"{" "}
         </p>
         <footer className="blockquote-footer">
           <a href="https://www.twitter.com/t3dotgg">TheoBr</a>
         </footer>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row className="row-justify-center-pb-sm">
           {mayorProjects.map((item) => {
             return (
               <Col md={4} className="project-card">
@@ -126,8 +126,10 @@ function Projects() {
         <h1 className="project-heading negative-letter-spacing">
           Other <strong className="purple">Projects </strong>
         </h1>
-        <p style={{ color: "white" }}>Here you can find some other projects.</p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <p className="text-on-primary">
+          Here you can find some other projects.
+        </p>
+        <Row className="row-justify-center-pb-sm">
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={curseforge}

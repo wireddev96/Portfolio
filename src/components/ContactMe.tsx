@@ -54,11 +54,8 @@ function ContactMe() {
         <Container fluid className="contact-section content" id="about">
           <Container>
             <Row>
-              <Col md={12} className="about">
-                <h1
-                  style={{ fontSize: "2.6em" }}
-                  className="negative-letter-spacing"
-                >
+              <Col md={12}>
+                <h1 className="negative-letter-spacing page-section-title--lg">
                   CONTACT <span className="purple"> ME </span>
                 </h1>
               </Col>

@@ -32,22 +32,11 @@ function ProjectCards(props: ProjectCardProps) {
     ));
   return (
     <Card className="project-card-view">
-      <div style={{ position: "relative" }}>
+      <div className="project-card-image-wrap">
         <Card.Img variant="top" src={props.imgPath} alt="card-img" />
         {props.workInProgress && (
-          <div
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-              color: "white",
-              padding: "10px",
-              borderRadius: "5px",
-            }}
-          >
-            <span style={{ marginLeft: "5px" }}>Work in Progress 🚧</span>
+          <div className="project-card-wip-overlay">
+            <span className="project-card-wip-text">Work in Progress 🚧</span>
           </div>
         )}
       </div>
@@ -57,7 +46,7 @@ function ProjectCards(props: ProjectCardProps) {
           <strong>{props.title}</strong>
         </Card.Title>
         <br />
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Text className="text-block-justify">
           {props.summary && (
             <>
               <strong>{props.summary}</strong> <br /> <br />

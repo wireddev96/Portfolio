@@ -256,6 +256,15 @@ button:focus {
   padding-left: 1rem !important;
 }
 
+.navbar-link-icon {
+  margin-bottom: 2px;
+}
+
+.navbar-github-icon {
+  padding-left: 4px;
+  width: 20px;
+}
+
 .nav-link {
   padding: 0.8rem 1rem !important;
 }
@@ -603,6 +612,15 @@ button:focus {
 .previewProjects {
   justify-content: center !important;
   padding-top: 9em !important;
+}
+
+.link-inline-icon {
+  margin-bottom: 2px;
+  margin-right: 7px;
+}
+
+.preview-image-rounded {
+  border-radius: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1066,6 +1084,25 @@ button:focus {
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
+.project-card-image-wrap {
+  position: relative;
+}
+
+.project-card-wip-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.project-card-wip-text {
+  margin-left: 5px;
+}
+
 .image-card-view {
   box-shadow: 0 2px 2px 2px rgba(129, 72, 144, 0.561) !important;
   color: white !important;
@@ -1147,6 +1184,41 @@ button:focus {
   padding-top: 10px !important;
 }
 
+.project-heading--extra-bottom {
+  padding-bottom: 20px !important;
+}
+
+.page-section-title {
+  font-size: 2.1em;
+  padding-bottom: 20px;
+}
+
+.page-section-title--lg {
+  font-size: 2.6em;
+}
+
+.row-justify-center-pb-sm {
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.row-justify-center-pb-lg {
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.text-on-primary {
+  color: white;
+}
+
+.text-quote-muted {
+  color: rgb(155 126 172);
+}
+
+.text-block-justify {
+  text-align: justify;
+}
+
 .project-card-footer {
   padding: 20px !important;
   text-align: left !important;
@@ -1205,6 +1277,17 @@ button:focus {
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+}
+
+.about-hero-row {
+  justify-content: center;
+  padding: 10px;
+}
+
+.about-text-column {
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 @mixin tech-icons {
@@ -1530,6 +1613,11 @@ button:focus {
   padding-left: 1px !important;
 }
 
+.about-img {
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
 @media (max-width: 767px) {
   .about-img {
     padding-top: 0 !important;
@@ -1552,6 +1640,15 @@ button:focus {
   padding-top: 50px;
   padding-bottom: 50px;
   justify-content: center;
+}
+
+.resume-download-row {
+  justify-content: center;
+  position: relative;
+}
+
+.resume-download-button {
+  max-width: 250px;
 }
 
 .resume-document {
@@ -1810,6 +1907,7 @@ button:focus {
 }
 
 .star {
+  color: yellow;
   animation-name: star;
   animation-duration: 7s;
   animation-iteration-count: infinite;

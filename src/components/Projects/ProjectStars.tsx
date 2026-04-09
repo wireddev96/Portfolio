@@ -25,13 +25,13 @@ const ProjectStars = (props: Props) => {
   if (stars === null || stars === "" || stars === undefined || !stars) {
     return (
       <div>
-        Check out <AiFillStar style={{ color: "yellow" }} /> on GitHub!
+        Check out <AiFillStar className="star" /> on GitHub!
       </div>
     );
   } else {
     return (
       <div className="project-stars">
-        {stars} <AiFillStar style={{ color: "yellow" }} className="star" />
+        {stars} <AiFillStar className="star" />
       </div>
     );
   }

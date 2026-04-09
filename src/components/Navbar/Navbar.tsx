@@ -55,7 +55,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} />
+                <AiOutlineHome className="navbar-link-icon" />
                 <div>Home</div>
               </Nav.Link>
             </Nav.Item>
@@ -66,7 +66,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} />
+                <AiOutlineUser className="navbar-link-icon" />
                 <div>About</div>
               </Nav.Link>
             </Nav.Item>
@@ -77,9 +77,7 @@ function NavBar() {
                 to="/projects"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+                <AiOutlineFundProjectionScreen className="navbar-link-icon" />{" "}
                 <div>Projects</div>
               </Nav.Link>
             </Nav.Item>
@@ -90,7 +88,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} />
+                <CgFileDocument className="navbar-link-icon" />
                 <div>Resume</div>
               </Nav.Link>
             </Nav.Item>
@@ -101,7 +99,7 @@ function NavBar() {
                 to="/contactme"
                 onClick={() => updateExpanded(false)}
               >
-                <CgMail style={{ marginBottom: "2px" }} />
+                <CgMail className="navbar-link-icon" />
                 <div>Contact Me</div>
               </Nav.Link>
             </Nav.Item>

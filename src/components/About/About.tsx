@@ -26,26 +26,14 @@ function About() {
   return (
     <Container fluid className="about-section">
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+        <Row className="about-hero-row">
+          <Col md={7} className="about-text-column">
+            <h1 className="page-section-title">
               Know Who <strong className="purple">I am</strong>
             </h1>
             <AboutCard />
           </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-            data-aos="flip-right"
-          >
+          <Col md={5} className="about-img" data-aos="flip-right">
             <img src={laptopImg} alt="about" className="img-fluid" />
             <br /> <br /> <br />
             <h4>

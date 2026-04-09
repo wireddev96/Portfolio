@@ -5,8 +5,8 @@ import { githubUsername } from "../data";
 
 function Github() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
+    <Row className="row-justify-center-pb-sm">
+      <h1 className="project-heading project-heading--extra-bottom">
         Days I <strong className="purple">Code</strong>
       </h1>
       <GitHubCalendar

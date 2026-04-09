@@ -70,7 +70,7 @@ function Techstack() {
       <h2>
         (Programming) <span className="purple">Languages</span>
       </h2>
-      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Row className="row-justify-center-pb-lg">
         <Col xs={4} md={2} className="tech-icons-html">
           <a
             href="https://www.w3schools.com/html/"
@@ -141,7 +141,7 @@ function Techstack() {
       <h2>
         Other <span className="purple">Skills</span> (Frameworks etc.)
       </h2>
-      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Row className="row-justify-center-pb-lg">
         <Col xs={4} md={2} className="tech-icons-react">
           <a href="https://reactjs.org/" className="link-without-styling">
             <DiReact />

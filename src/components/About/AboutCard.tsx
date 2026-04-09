@@ -19,7 +19,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
+          <p className="text-block-justify">
             Dear visitors of my{" "}
             <span className="purple"> personal website.</span> I am{" "}
             <span className="purple"> Jordan Lopez </span>
@@ -42,7 +42,7 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ textAlign: "justify" }}>
+          <p className="text-block-justify">
             Since I got my first computer for my enrollment in elementary
             school, I've been fascinated by figuring out what's behind the
             applications I use. That's why I started programming{" "}
@@ -86,7 +86,7 @@ function AboutCard() {
             </i>
           </p>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p className="text-quote-muted">
             "Strive to build things that make a difference!"{" "}
           </p>
           <footer className="blockquote-footer">My motto</footer>

@@ -9,7 +9,7 @@ const SiMicrosoftoffice = lazy(() =>
 
 function OtherSkills() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row className="row-justify-center-pb-lg">
       <Col xs={4} md={2} className="tech-icons-office">
         <a href="https://www.office.com/" className="link-without-styling">
           <SiMicrosoftoffice />

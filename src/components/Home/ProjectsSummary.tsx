@@ -50,9 +50,7 @@ function AboutSummary() {
               programming after some small stuff I tried out with Scratch.
             </p>
             <Nav.Link as={Link} to="/projects" className="link">
-              <AiOutlineFundProjectionScreen
-                style={{ marginBottom: "2px", marginRight: "7px" }}
-              />
+              <AiOutlineFundProjectionScreen className="link-inline-icon" />
               See my projects
             </Nav.Link>
           </Col>
@@ -60,9 +58,8 @@ function AboutSummary() {
             <Tilt>
               <ResponsiveImage
                 src={previewProjects}
-                className="img-fluid"
+                className="img-fluid preview-image-rounded"
                 alt="previewProjects"
-                style={{ borderRadius: "20px" }}
               />
             </Tilt>
           </Col>

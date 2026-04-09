@@ -33,7 +33,7 @@ const SiWindows11 = lazy(() =>
 function Toolstack() {
   return (
     <Container>
-      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Row className="row-justify-center-pb-lg">
         <Col xs={4} md={2} className="tech-icons-vscode">
           <a
             href="https://code.visualstudio.com/"

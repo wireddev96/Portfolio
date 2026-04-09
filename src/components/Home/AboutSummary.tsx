@@ -30,9 +30,7 @@ function aboutSummary() {
               habits that keep <span className="purple">shipping</span> sustainable.
             </p>
             <Nav.Link as={Link} to="/about" className="link">
-              <AiOutlineUser
-                style={{ marginBottom: "2px", marginRight: "7px" }}
-              />
+              <AiOutlineUser className="link-inline-icon" />
               Learn more about me
             </Nav.Link>
           </Col>
@@ -40,9 +38,8 @@ function aboutSummary() {
             <Tilt>
               <ResponsiveImage
                 src={previewAbout}
-                className="img-fluid"
+                className="img-fluid preview-image-rounded"
                 alt="previewAbout"
-                style={{ borderRadius: "20px" }}
               />
             </Tilt>
           </Col>
