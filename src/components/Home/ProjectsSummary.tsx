@@ -28,23 +28,23 @@ function AboutSummary() {
               Interfaces, apps, and experiments — spanning{" "}
               <span className="purple">production UIs</span>, tooling, and{" "}
               <span className="purple">earlier game-adjacent</span> work that got
-              me into programming. <br />
-              <br />
-              Highlights include: <br /> <br />
-              <ul>
-                <li className="basic-list">
-                  <ImPointRight /> A tablet for elderly people
-                </li>{" "}
-                <br />
-                <li className="basic-list">
-                  <ImPointRight /> A weather app
-                </li>{" "}
-                <br />
-                <li className="basic-list">
-                  <ImPointRight /> A few Minecraft Mods
-                </li>{" "}
-                <br /> <br />
-              </ul>
+              me into programming.
+            </p>
+            <p className="home-about-summary-body projects-summary-highlights-intro">
+              Highlights include:
+            </p>
+            <ul className="projects-summary-list basic-list">
+              <li>
+                <ImPointRight /> A tablet for elderly people
+              </li>
+              <li>
+                <ImPointRight /> A weather app
+              </li>
+              <li>
+                <ImPointRight /> A few Minecraft Mods
+              </li>
+            </ul>
+            <p className="home-about-summary-body">
               In the case of the Minecraft Mods, they were my{" "}
               <span className="purple"> first projects</span> in relationship to
               programming after some small stuff I tried out with Scratch.
