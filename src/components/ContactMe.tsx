@@ -64,11 +64,11 @@ function ContactMe() {
               </Col>
             </Row>
             <p className="contact-body">
-              <b> Jakob Rössner </b> <br /> <br />
-              <AiFillPhone /> <b>Phone:</b> +49 1512 5404979 <br />
+              <b> Jordan Lopez </b> <br /> <br />
+              <AiFillPhone /> <b>Phone:</b> +1-830-723-0088  <br />
               <AiFillMail /> <b>E-Mail:</b>{" "}
-              <a href={linkData.mail}> jakob.roessner@outlook.de </a> <br />
-              <AiFillHome /> <b>Address:</b> 15755, Teupitz ST Tornow, Germany{" "}
+              <a href={linkData.mail}> jordanlopez.me@outlook.com  </a> <br />
+              <AiFillHome /> <b>Address:</b> 9936 Thane Way Austin TX USA{" "}
               <br />
             </p>
             <p>

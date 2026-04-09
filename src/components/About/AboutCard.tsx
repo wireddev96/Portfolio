@@ -10,8 +10,8 @@ function AboutCard() {
   const day = date.getDate();
   const year = date.getFullYear();
 
-  let age = year - 2009;
-  if (month < 3 || (month === 3 && day < 3)) {
+  let age = year - 1995;
+  if (month < 9 || (month === 9 && day < 13)) {
     age--;
   }
 
@@ -22,16 +22,8 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Dear visitors of my{" "}
             <span className="purple"> personal website.</span> I am{" "}
-            <span className="purple">Jakob Felix Eugen Rössner </span>
-            from <span className="purple"> Berlin, Germany.</span>
-            <br />I am a student at the{" "}
-            <a href="https://fsg-kw.de/" className="purple a">
-              Friedrich-Schiller-Gymnasium
-            </a>{" "}
-            and a Software Engineer at the{" "}
-            <a href="https://lylu.de/" className="purple a">
-              Lylu GmbH.
-            </a>
+            <span className="purple"> Jordan Lopez </span>
+            from <span className="purple"> Austin, TX, USA. </span>
             <br />
             <br />I am <span className="purple">{age} years old.</span> I have a
             wide range of interests, what you can see from the other activities
@@ -54,7 +46,7 @@ function AboutCard() {
             Since I got my first computer for my enrollment in elementary
             school, I've been fascinated by figuring out what's behind the
             applications I use. That's why I started programming{" "}
-            {convert.toWords(year - 2019)} years ago and have been increasingly
+            {convert.toWords(year - 2009)} years ago and have been increasingly
             passionate about it ever since and I have at least learnt something,
             I think… 🤷‍♂️
             <br />

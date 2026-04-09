@@ -121,27 +121,27 @@ function About() {
         </h1>
         <br />
         <img
-          src="https://github-readme-stats.vercel.app/api?username=fleetadmiraljakob&title_color=c770f0&icon_color=5d417a&text_color=ebebeb&bg_color=0a0e12&show_icons=true&count_private=true"
+          src="https://github-readme-stats.vercel.app/api?username=wireddev96&title_color=c770f0&icon_color=5d417a&text_color=ebebeb&bg_color=0a0e12&show_icons=true&count_private=true"
           alt="about"
           className="img-fluid"
         />{" "}
         <br />
         <br />
         <img
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=fleetadmiraljakob&title_color=c770f0&icon_color=5d417a&text_color=ebebeb&bg_color=0a0e12&show_icons=true&count_private=true&langs_count=6&hide=shaderlab,hlsl"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=wireddev96&title_color=c770f0&icon_color=5d417a&text_color=ebebeb&bg_color=0a0e12&show_icons=true&count_private=true&langs_count=6&hide=shaderlab,hlsl"
           alt="about"
           className="img-fluid"
         />{" "}
         <br />
         <br />
         <img
-          src="https://github-readme-streak-stats-zeta-red.vercel.app/?user=fleetadmiraljakob&theme=modern-lilac2"
+          src="https://github-readme-streak-stats-zeta-red.vercel.app/?user=wireddev96&theme=modern-lilac2"
           alt="about"
           className="img-fluid"
         />{" "}
         <br /> <br />
         <img
-          src="https://github-profile-trophy.vercel.app/?username=fleetadmiraljakob&theme=darkhub&no-frame=true&no-bg=false&margin-w=4"
+          src="https://github-profile-trophy.vercel.app/?username=wireddev96&theme=darkhub&no-frame=true&no-bg=false&margin-w=4"
           alt="about"
           className="img-fluid"
         />{" "}
@@ -152,7 +152,7 @@ function About() {
         </h1>
         <br />
         <img
-          src="https://github-readme-stats.vercel.app/api/wakatime?username=FleetAdmiralJakob&title_color=c770f0&icon_color=5d417a&text_color=ebebeb&bg_color=0a0e12&layout=compact&hide=other&langs_count=20&all_time&custom_title=Wakatime%20Stats%20(Top%2020%20Langs)"
+          src="https://github-readme-stats.vercel.app/api/wakatime?username=wireddev96&title_color=c770f0&icon_color=5d417a&text_color=ebebeb&bg_color=0a0e12&layout=compact&hide=other&langs_count=20&all_time&custom_title=Wakatime%20Stats%20(Top%2020%20Langs)"
           alt="about"
           className="img-fluid"
         />{" "}

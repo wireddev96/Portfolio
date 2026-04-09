@@ -22,7 +22,7 @@ function Home() {
               <div className="negative-letter-spacing">
                 <h1 className="heading">Hi, I&apos;m</h1>
                 <h1 className="heading-name">
-                  <span className="main-name">Jakob Rössner</span>
+                  <span className="main-name">Jordan Lopez</span>
                 </h1>
               </div>
               <p className="hero-lead">

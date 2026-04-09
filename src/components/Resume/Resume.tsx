@@ -27,35 +27,7 @@ function ResumeNew() {
             style={{ fontSize: "2.1em", paddingBottom: "20px" }}
             className="negative-letter-spacing"
           >
-            German <strong className="purple">Résumé</strong>
-          </h1>
-          <Document file={pdf_de} className="d-flex justify-content-center">
-            <Page
-              className="resume-document"
-              pageNumber={1}
-              scale={width > 786 ? 1.7 : 0.6}
-            />
-          </Document>
-        </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf_de}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download PDF
-          </Button>
-        </Row>
-
-        <Row className="resume">
-          <h1
-            style={{ fontSize: "2.1em", paddingBottom: "20px" }}
-            className="negative-letter-spacing"
-          >
-            English <strong className="purple">Résumé</strong>
+            English <strong className="purple">Resume</strong>
           </h1>
           <Document file={pdf_en} className="d-flex justify-content-center">
             <Page

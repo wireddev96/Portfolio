@@ -13,7 +13,7 @@ import { HiOutlineArrowUp } from "react-icons/hi";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Preloader from "./components/Pre";
-import Résumé from "./components/Résumé/Résumé";
+import Resume from "./components/Resume/Resume";
 import ScrollToTop from "./components/ScrollToTop";
 import Particle from "./components/Particle";
 import AOS from "aos";
@@ -84,7 +84,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<Résumé />} />
+            <Route path="/resume" element={<Resume />} />
             <Route path="/contactme" element={<ContactMe />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
