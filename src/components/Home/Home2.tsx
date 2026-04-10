@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 // @ts-ignore
 import myImg from "../../Assets/avatar4.webp";
@@ -8,21 +8,6 @@ import { FaLinkedinIn, FaMailBulk } from "react-icons/fa";
 import linkData from "../data";
 
 function Home2() {
-  const [showDiscordPopup, setShowDiscordPopup] = React.useState(false);
-  useEffect(() => {
-    const contentElements = document.querySelectorAll(".content");
-
-    contentElements.forEach((element) => {
-      element.classList.toggle("blur", showDiscordPopup);
-    });
-
-    return () => {
-      contentElements.forEach((element) => {
-        element.classList.remove("blur");
-      });
-    };
-  }, [showDiscordPopup]);
-
   return (
     <>
       <Container fluid className="home-about-section content" id="about">
