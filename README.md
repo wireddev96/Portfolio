@@ -2,9 +2,6 @@
   Jordan Lopez Portfolio Site<br/>
   <a href="" target="_blank">a-little-better</a>
 </h2>
-<div>
-  <img alt="Demo" src="Images/img3.png" />
-</div>
 
 <br/>
 
