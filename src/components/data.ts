@@ -8,14 +8,12 @@ export interface GithubData {
   stargazers_count: string;
 }
 
-export const githubUsername = "FleetAdmiralJakob";
+export const githubUsername = "wireddev96";
 
 const linkData = {
-  linkedIn: "https://www.linkedin.com/in/jakobroessner/",
+  linkedIn: "https://www.linkedin.com/in/jordan-lopez-b0b2b5105/ ",
   github: `https://github.com/${githubUsername}/`,
-  mail: "mailto:jakob.roessner@outlook.de",
-  leetcode: "https://leetcode.com/FleetAdmiralJakob/",
-  codewars: "https://www.codewars.com/users/FleetAdmiralJakob",
+  mail: "jordanlopez.sw@gmail.com",
 };
 
 export async function githubData(repoName?: string): Promise<GithubData> {

@@ -1,5 +1,8 @@
+packages:
+  - "."
+
 allowBuilds:
-  '@parcel/watcher': false
+  "@parcel/watcher": false
   canvas: false
   core-js: false
   core-js-pure: false

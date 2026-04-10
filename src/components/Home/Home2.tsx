@@ -4,11 +4,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import myImg from "../../Assets/avatar4.webp";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
-import { FaDiscord, FaLinkedinIn, FaMailBulk } from "react-icons/fa";
+import { FaLinkedinIn, FaMailBulk } from "react-icons/fa";
 import linkData from "../data";
-// @ts-ignore
-import popup_discord_png from "../../Assets/discord-popup.png";
-import Button from "react-bootstrap/Button";
 
 function Home2() {
   const [showDiscordPopup, setShowDiscordPopup] = React.useState(false);
@@ -28,23 +25,6 @@ function Home2() {
 
   return (
     <>
-      {showDiscordPopup && (
-        <div className="discord-popup">
-          <img
-            src={popup_discord_png}
-            alt="Discord Info"
-            className="popup-discord-png"
-          />
-          <Button
-            variant="primary"
-            onClick={() => {
-              setShowDiscordPopup(false);
-            }}
-          >
-            Close
-          </Button>
-        </div>
-      )}
       <Container fluid className="home-about-section content" id="about">
         <Container>
           <Row>
@@ -53,7 +33,7 @@ function Home2() {
                 <img
                   src={myImg}
                   className="img-fluid"
-                  alt="Portrait of Jakob Rössner"
+                  alt="Portrait of Jordan Lopez"
                   width={600}
                   height={600}
                 />
@@ -87,26 +67,6 @@ function Home2() {
                   >
                     <FaLinkedinIn />
                   </a>
-                </li>
-                <li className="social-icons">
-                  <div
-                    className="icon-colour home-social-icons"
-                    role="button"
-                    tabIndex={0}
-                    aria-label="Discord"
-                    onClick={(event) => {
-                      event.preventDefault();
-                      setShowDiscordPopup(true);
-                    }}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault();
-                        setShowDiscordPopup(true);
-                      }
-                    }}
-                  >
-                    <FaDiscord />
-                  </div>
                 </li>
                 <li className="social-icons">
                   <a

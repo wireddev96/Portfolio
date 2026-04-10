@@ -33,6 +33,6 @@ Server/config.js
 /cypress
 cypress.config.ts
 
-# Buggy tooling can emit these; "NUL" is a Windows reserved name and breaks `git add`.
+# Windows: "NUL" is a reserved device name; if tooling writes NUL / NUL.map here, Git cannot mmap them.
 /NUL
 /NUL.map

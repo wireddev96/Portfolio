@@ -26,15 +26,37 @@ function Home() {
                 </h1>
               </div>
               <p className="hero-lead">
-                I lead and ship product UI on the web: component architecture,
-                design systems, performance budgets, and accessible experiences
-                users can trust — from first paint to edge cases.
+              Senior Software Engineer with 8+ years of experience building full-stack SaaS applications using React, TypeScript,
+              GraphQL, Node.js, and scalable APIs. Proven track record shipping collaborative, content-rich products with a strong
+              focus on user experience, performance optimization, automated testing, and end-to-end feature ownership.
               </p>
               <ul className="hero-stack" aria-label="Core technologies">
                 <li>React</li>
                 <li>TypeScript</li>
                 <li>CSS / SCSS</li>
                 <li>Web platform</li>
+                <li>Vue</li>
+                <li>Angular</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>GraphQL</li>
+                <li>REST APIs</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>PHP</li>
+                <li>AWS</li>
+                <li>Docker</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>Elasticsearch</li>
+                <li>RabbitMQ</li>
+                <li>GitHub</li>
+                <li>Jenkins</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Terraform</li>
               </ul>
               <div className="hero-type-row">
                 <span className="hero-type-label">Focus areas</span>

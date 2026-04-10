@@ -6,7 +6,7 @@ import {
   AiFillMail,
   AiFillPhone,
 } from "react-icons/ai";
-import { FaDiscord, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaMailBulk } from "react-icons/fa";
 import linkData from "./data";
 // @ts-ignore
 import popup_discord_png from "../Assets/discord-popup.png";
@@ -94,14 +94,13 @@ function ContactMe() {
                   </a>
                 </li>
                 <li className="social-icons">
-                  <button
-                    type="button"
-                    className="icon-colour home-social-icons home-social-icons-btn"
-                    aria-label="Discord"
-                    onClick={() => setShowDiscordPopup(true)}
+                  <a
+                    href={linkData.mail}
+                    className="icon-colour home-social-icons"
+                    aria-label="Email"
                   >
-                    <FaDiscord />
-                  </button>
+                    <FaMailBulk />
+                  </a>
                 </li>
               </ul>
             </div>
